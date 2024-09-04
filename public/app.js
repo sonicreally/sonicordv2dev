@@ -1,6 +1,3 @@
-const socket = io('https://sonicordv2dev-nzbjl1p3c-sonicreallys-projects.vercel.app/');
-
-
 const startCallButton = document.getElementById('startCall');
 const endCallButton = document.getElementById('endCall');
 const messageInput = document.getElementById('messageInput');
@@ -22,7 +19,7 @@ const peerConnectionConstraints = {
     optional: [{ DtlsSrtpKeyAgreement: true }]
 };
 
-socket = io();
+socket = io('https://sonicordv2dev-nzbjl1p3c-sonicreallys-projects.vercel.app');
 
 startCallButton.addEventListener('click', async () => {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
