@@ -19,7 +19,7 @@ const peerConnectionConstraints = {
     optional: [{ DtlsSrtpKeyAgreement: true }]
 };
 
-socket = io();
+socket = io('https://sonicordv2dev-nzbjl1p3c-sonicreallys-projects.vercel.app');
 
 startCallButton.addEventListener('click', async () => {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });

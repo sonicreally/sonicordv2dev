@@ -1,3 +1,6 @@
+const socket = io('https://sonicordv2dev-nzbjl1p3c-sonicreallys-projects.vercel.app/');
+
+
 const startCallButton = document.getElementById('startCall');
 const endCallButton = document.getElementById('endCall');
 const messageInput = document.getElementById('messageInput');
